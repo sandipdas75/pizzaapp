@@ -1,0 +1,29 @@
+<div class="table-wrapper mt-20">
+  <table class="w-100">
+    <thead class="table-header">
+    <tr>
+      <th>Item Name</th>
+      <th>Price </th>
+      <th>Total Price </th>
+      <th>Customer Name</th>
+      <th>Address</th>
+    </tr>
+    </thead>
+    <tbody class="table-body">
+      <tr *ngFor="let item of result">
+        <td>{{item.item_name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.total_amount}}</td>
+        <td>{{item.customer_name}}</td>
+        <td>
+        <div class="address">
+          <p>Location :{{item.ship_top.address}}</p>
+          <p>Pin :{{item.ship_top.pin}}</p>
+          <p>City :{{item.ship_top.city}}</p>
+          <p>Country :{{item.ship_top.country}}</p>
+        </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
