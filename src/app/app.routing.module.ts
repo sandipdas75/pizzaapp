@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { OrderDetailsComponent } from './order-details/order-details.component';
-import { OrderListsComponent } from './order-lists/order-lists.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 
 const routes: Routes = [
   { path: '', redirectTo: '/lists', pathMatch: 'full' },
-  {path:'lists',component:OrderListsComponent},
-  {path:'detail/:id',component:OrderDetailsComponent},
+  {path:'lists',component:LandingPageComponent},
 ];
 
 @NgModule({

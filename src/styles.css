@@ -1,4 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-body, .btn, label, select, input, textarea, h4, h5, h6 {
-    font-family: "Roboto", "Arial","sans-serif";
+body{
+  overflow-x: hidden;
 }
